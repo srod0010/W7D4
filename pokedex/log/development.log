@@ -1048,3 +1048,92 @@
   [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mPokemon Load (2.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:19:38 -0800
+  [1m[35m (20.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (104.1ms)
+Completed 200 OK in 181ms (Views: 144.4ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:19:59 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (72.4ms)
+Completed 200 OK in 83ms (Views: 70.2ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:21:38 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (3034.9ms)
+Completed 200 OK in 3044ms (Views: 3042.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:24:16 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (26.6ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     6: # end
+     7: 
+     8: @pokemon.each do |poke|
+     9:   json.set! poke.id poke.name
+    10: end
+  
+app/views/api/pokemon/index.json.jbuilder:9:in `block in _app_views_api_pokemon_index_json_jbuilder___2653334689724853506_70209120636240'
+app/views/api/pokemon/index.json.jbuilder:8:in `_app_views_api_pokemon_index_json_jbuilder___2653334689724853506_70209120636240'
+app/controllers/api/pokemon_controller.rb:4:in `index'
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:24:54 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (12.6ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:25:12 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (8.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     6: # end
+     7: 
+     8: json.array! @pokemon.each do |poke|
+     9:   json.set! poke.id poke.name
+    10: end
+  
+app/views/api/pokemon/index.json.jbuilder:9:in `block in _app_views_api_pokemon_index_json_jbuilder___2653334689724853506_70209120616600'
+app/views/api/pokemon/index.json.jbuilder:8:in `_app_views_api_pokemon_index_json_jbuilder___2653334689724853506_70209120616600'
+app/controllers/api/pokemon_controller.rb:4:in `index'
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:25:21 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (532.2ms)
+Completed 200 OK in 546ms (Views: 544.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:25:35 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (402.0ms)
+Completed 200 OK in 413ms (Views: 411.5ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
