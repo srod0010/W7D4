@@ -280,3 +280,270 @@ Processing by Api::GuestsController#show as JSON
 Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:21:55 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  Rendered api/guests/index.json.jbuilder (1.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected =>, expecting '}'
+...ay! @guests.forEach {(guest) => 
+...                             ^~
+/Users/appacademy/Desktop/W7D3/app/views/api/guests/index.json.jbuilder:2: syntax error, unexpected '}', expecting keyword_end
+  guest.name}
+            ^:
+  app/views/api/guests/index.json.jbuilder:1:in `'
+  app/controllers/api/guests_controller.rb:4:in `index'
+
+Started POST "/__better_errors/158af19fa9a3abc5/variables" for 127.0.0.1 at 2018-12-05 14:21:56 -0800
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:22:21 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.6ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (3.6ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:22:53 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.7ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (3.6ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:24:45 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.8ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered api/guests/index.json.jbuilder (401.2ms)
+Completed 500 Internal Server Error in 410ms (ActiveRecord: 1.4ms)
+
+
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+
+NameError - undefined local variable or method `guest' for #<#<Class:0x00007f8c7f1ce928>:0x00007f8c815482c8>
+Did you mean?  @guests:
+  app/views/api/guests/index.json.jbuilder:2:in `_app_views_api_guests_index_json_jbuilder___2076915532231167955_70120720946980'
+  app/controllers/api/guests_controller.rb:4:in `index'
+
+Started POST "/__better_errors/0f52bc9bf647def3/variables" for 127.0.0.1 at 2018-12-05 14:24:46 -0800
+  [1m[36mGuest Load (0.7ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:26:50 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  Rendered api/guests/index.json.jbuilder (0.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+...); json.array! @guests, :name :age
+...                              ^:
+  app/views/api/guests/index.json.jbuilder:1:in `'
+  app/controllers/api/guests_controller.rb:4:in `index'
+
+Started POST "/__better_errors/62b734b64998ce5f/variables" for 127.0.0.1 at 2018-12-05 14:26:50 -0800
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:26:55 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.9ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (3.6ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:30:56 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  Rendered api/guests/index.json.jbuilder (0.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^:
+  app/views/api/guests/index.json.jbuilder:9:in `'
+  app/controllers/api/guests_controller.rb:4:in `index'
+
+Started POST "/__better_errors/867ba33946614f8b/variables" for 127.0.0.1 at 2018-12-05 14:30:56 -0800
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:31:42 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.5ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (2.6ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:31:58 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.5ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (2.7ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:33:02 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.4ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (2.1ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:33:13 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.5ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (2.7ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:33:59 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.5ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (3.0ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:34:21 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.6ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  [1m[36mGuest Load (0.7ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered api/guests/index.json.jbuilder (185.1ms)
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 1.4ms)
+
+
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Guest Load (0.0ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" LIMIT $1[0m  [["LIMIT", 11]]
+
+NoMethodError - undefined method `name' for #<#<Class:0x00007f8c7f1ce928>:0x00007f8c81526d80>:
+  app/views/api/guests/index.json.jbuilder:4:in `block in _app_views_api_guests_index_json_jbuilder___2076915532231167955_70120720903460'
+  app/views/api/guests/index.json.jbuilder:3:in `_app_views_api_guests_index_json_jbuilder___2076915532231167955_70120720903460'
+  app/controllers/api/guests_controller.rb:4:in `index'
+
+Started POST "/__better_errors/8d843b913d8e0cd3/variables" for 127.0.0.1 at 2018-12-05 14:34:22 -0800
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:34:31 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  Rendered api/guests/index.json.jbuilder (2.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  "name" guest.name
+         ^~~~~
+/Users/appacademy/Desktop/W7D3/app/views/api/guests/index.json.jbuilder:8: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~:
+  app/views/api/guests/index.json.jbuilder:4:in `'
+  app/controllers/api/guests_controller.rb:4:in `index'
+
+Started POST "/__better_errors/b73f1d6599d3f36c/variables" for 127.0.0.1 at 2018-12-05 14:34:31 -0800
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:39:01 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.7ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (3.5ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:39:48 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.5ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (3.4ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:42:07 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.6ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (3.0ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:44:15 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.7ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (3.7ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:44:31 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.6ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (3.7ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/guests" for 127.0.0.1 at 2018-12-05 14:45:26 -0800
+Processing by Api::GuestsController#index as JSON
+  Rendering api/guests/index.json.jbuilder
+  [1m[36mGuest Load (0.6ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
+  Rendered api/guests/index.json.jbuilder (3.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.6ms)
+
+
