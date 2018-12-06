@@ -1137,3 +1137,534 @@ Completed 200 OK in 413ms (Views: 411.5ms | ActiveRecord: 1.0ms)
 
   [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:35:35 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (1019.2ms)
+Completed 200 OK in 1030ms (Views: 1028.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:35:51 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (2.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (11.2ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (The asset "1.svg" is not present in the asset pipeline.):
+    1: @pokemon.each do |poke|
+    2:   json.set! poke.id do
+    3:     json.extract! poke, :id, :name
+    4:     json.image_url asset_path(poke.image_url)
+    5:   end
+    6: end
+  
+app/views/api/pokemon/index.json.jbuilder:4:in `block (2 levels) in _app_views_api_pokemon_index_json_jbuilder___2653334689724853506_70209072658020'
+app/views/api/pokemon/index.json.jbuilder:2:in `block in _app_views_api_pokemon_index_json_jbuilder___2653334689724853506_70209072658020'
+app/views/api/pokemon/index.json.jbuilder:1:in `_app_views_api_pokemon_index_json_jbuilder___2653334689724853506_70209072658020'
+app/controllers/api/pokemon_controller.rb:4:in `index'
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:36:15 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (367.5ms)
+Completed 200 OK in 378ms (Views: 376.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:36:29 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (23.5ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:38:11 -0800
+  [1m[35m (16.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (245.1ms)
+Completed 500 Internal Server Error in 303ms (ActiveRecord: 8.2ms)
+
+
+  
+ActionView::Template::Error (The asset "1.svg" is not present in the asset pipeline.):
+    1: @pokemon.each do |poke|
+    2:   json.set! poke.id do
+    3:     json.extract! poke, :id, :name
+    4:     json.image_url asset_path(poke.image_url)
+    5:   end
+    6: end
+  
+app/views/api/pokemon/index.json.jbuilder:4:in `block (2 levels) in _app_views_api_pokemon_index_json_jbuilder__4499135058867664288_70285546743020'
+app/views/api/pokemon/index.json.jbuilder:2:in `block in _app_views_api_pokemon_index_json_jbuilder__4499135058867664288_70285546743020'
+app/views/api/pokemon/index.json.jbuilder:1:in `_app_views_api_pokemon_index_json_jbuilder__4499135058867664288_70285546743020'
+app/controllers/api/pokemon_controller.rb:4:in `index'
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:38:19 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (3.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (42.1ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 17.7ms)
+
+
+  
+ActionView::Template::Error (The asset "1.svg" is not present in the asset pipeline.):
+    1: @pokemon.each do |poke|
+    2:   json.set! poke.id do
+    3:     json.extract! poke, :id, :name
+    4:     json.image_url asset_path(poke.image_url)
+    5:   end
+    6: end
+  
+app/views/api/pokemon/index.json.jbuilder:4:in `block (2 levels) in _app_views_api_pokemon_index_json_jbuilder__4499135058867664288_70285537071820'
+app/views/api/pokemon/index.json.jbuilder:2:in `block in _app_views_api_pokemon_index_json_jbuilder__4499135058867664288_70285537071820'
+app/views/api/pokemon/index.json.jbuilder:1:in `_app_views_api_pokemon_index_json_jbuilder__4499135058867664288_70285537071820'
+app/controllers/api/pokemon_controller.rb:4:in `index'
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:38:47 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (1026.4ms)
+Completed 200 OK in 1037ms (Views: 1035.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:41:35 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (13.6ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 15:41:40 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (17.3ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2018-12-05 16:15:31 -0800
+Processing by Api::PokemonController#index as JSON
+  Rendering api/pokemon/index.json.jbuilder
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered api/pokemon/index.json.jbuilder (43.2ms)
+Completed 200 OK in 73ms (Views: 51.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:15:36 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/api/pokemon_controller.rb:8:in `show'
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:16:15 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by_id' for nil:NilClass):
+  
+app/controllers/api/pokemon_controller.rb:8:in `show'
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:16:22 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by_id' for nil:NilClass):
+  
+app/controllers/api/pokemon_controller.rb:8:in `show'
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:16:53 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (3.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 5.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: json.set! json.pokemon do 
+    2:   json.extract! @pokemon, :id, :name
+    3: end
+  
+app/views/api/pokemon/show.json.jbuilder:2:in `block in _app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285547413200'
+app/views/api/pokemon/show.json.jbuilder:1:in `_app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285547413200'
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:17:09 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (1.9ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (0.9ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.8ms)
+
+
+  
+SyntaxError (/Users/appacademy/Desktop/W7D3/pokedex/app/views/api/pokemon/show.json.jbuilder:2: syntax error, unexpected ':', expecting keyword_end
+  json.extract! @pokemon :id, :name
+                         ^
+/Users/appacademy/Desktop/W7D3/pokedex/app/views/api/pokemon/show.json.jbuilder:2: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+...on.extract! @pokemon :id, :name
+...                               ^):
+  
+app/views/api/pokemon/show.json.jbuilder:2: syntax error, unexpected ':', expecting keyword_end
+app/views/api/pokemon/show.json.jbuilder:2: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:17:56 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (0.6ms)
+Completed 200 OK in 16ms (Views: 10.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/pokemon/:1" for 127.0.0.1 at 2018-12-05 16:18:48 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>":1"}
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (0.6ms)
+Completed 200 OK in 34ms (Views: 9.2ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/api/pokemon/:1" for 127.0.0.1 at 2018-12-05 16:21:19 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>":1"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (0.7ms)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/pokemon/:1" for 127.0.0.1 at 2018-12-05 16:21:56 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>":1"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (4.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: json.pokemon do 
+    2:   json.extract! @pokemon, :id, :name
+    3: end
+  
+app/views/api/pokemon/show.json.jbuilder:2:in `block in _app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285543483420'
+app/views/api/pokemon/show.json.jbuilder:1:in `_app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285543483420'
+Started GET "/api/pokemon/:1" for 127.0.0.1 at 2018-12-05 16:23:06 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>":1"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 55ms (ActiveRecord: 9.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pokemon with 'id'=:1):
+  
+app/controllers/api/pokemon_controller.rb:8:in `show'
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:23:16 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (1.6ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (0.6ms)
+Completed 200 OK in 38ms (Views: 10.7ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:23:27 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (3.7ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: json.pokemon do 
+    2:   json.extract! @pokemon, :id, :name
+    3: end
+  
+app/views/api/pokemon/show.json.jbuilder:2:in `block in _app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285582766760'
+app/views/api/pokemon/show.json.jbuilder:1:in `_app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285582766760'
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:23:35 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (0.7ms)
+Completed 200 OK in 30ms (Views: 9.0ms | ActiveRecord: 3.7ms)
+
+
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:26:26 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (1.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/appacademy/Desktop/W7D3/pokedex/app/views/api/pokemon/show.json.jbuilder:9: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/api/pokemon/show.json.jbuilder:9: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:26:36 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (13.1ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `defence' for #<Pokemon:0x00007fd941c59dc0>
+Did you mean?  defense
+               defense=
+               defense?):
+    1: json.pokemon do 
+    2:   json.extract! @pokemon, :id, :name, :attack, :defence
+    3:   json.array! @pokemon.moves.each do |move|
+    4:     json.moves move
+    5:   end
+  
+app/views/api/pokemon/show.json.jbuilder:2:in `block in _app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285544048040'
+app/views/api/pokemon/show.json.jbuilder:1:in `_app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285544048040'
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:26:45 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (4.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (Can't merge [{"moves"=>"tackle"}, {"moves"=>"vine whip"}] into {"id"=>1, "name"=>"Bulbasaur", "attack"=>49, "defense"=>49}):
+    1: json.pokemon do 
+    2:   json.extract! @pokemon, :id, :name, :attack, :defense
+    3:   json.array! @pokemon.moves.each do |move|
+    4:     json.moves move
+    5:   end
+    6: end
+  
+app/views/api/pokemon/show.json.jbuilder:3:in `block in _app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285571076040'
+app/views/api/pokemon/show.json.jbuilder:1:in `_app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285571076040'
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:27:53 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (0.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/Users/appacademy/Desktop/W7D3/pokedex/app/views/api/pokemon/show.json.jbuilder:11: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/api/pokemon/show.json.jbuilder:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:28:02 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (1.0ms)
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:29:34 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  Rendered api/pokemon/show.json.jbuilder (0.7ms)
+Completed 200 OK in 16ms (Views: 8.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:30:17 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (344.5ms)
+Completed 200 OK in 358ms (Views: 339.6ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:31:34 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (7.1ms)
+Completed 200 OK in 22ms (Views: 15.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:32:05 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (8.1ms)
+Completed 200 OK in 22ms (Views: 16.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:32:14 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (6.8ms)
+Completed 200 OK in 35ms (Views: 25.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:40:46 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (83.7ms)
+Completed 200 OK in 97ms (Views: 91.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:41:56 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (43.4ms)
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:43:01 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (8.2ms)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:43:51 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (400.1ms)
+Completed 500 Internal Server Error in 415ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `item' for #<#<Class:0x00007fd944fe7e58>:0x00007fd941da3438>):
+    4:   
+    5: end
+    6: 
+    7: json.set! item.id do 
+    8:   @pokemon.items.each do |item|
+    9:     json.set! item.id do
+   10:       json.extract! item, :name, :price, :happiness
+  
+app/views/api/pokemon/show.json.jbuilder:7:in `_app_views_api_pokemon_show_json_jbuilder__3015609860617695444_70285544726200'
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:44:01 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (9.6ms)
+Completed 200 OK in 24ms (Views: 17.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:44:41 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (10.9ms)
+Completed 200 OK in 25ms (Views: 19.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:45:53 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (50.2ms)
+Completed 200 OK in 64ms (Views: 57.8ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" ORDER BY "pokemons"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."pokemon_id" = $1 LIMIT $2[0m  [["pokemon_id", 1], ["LIMIT", 11]]
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:48:12 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (65.3ms)
+Completed 200 OK in 87ms (Views: 77.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/pokemon/1" for 127.0.0.1 at 2018-12-05 16:48:46 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 1]]
+  Rendered api/pokemon/show.json.jbuilder (12.7ms)
+Completed 200 OK in 32ms (Views: 24.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/pokemon/7" for 127.0.0.1 at 2018-12-05 16:49:59 -0800
+Processing by Api::PokemonController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering api/pokemon/show.json.jbuilder
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "items"."id" FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 7]]
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."pokemon_id" = $1[0m  [["pokemon_id", 7]]
+  Rendered api/pokemon/show.json.jbuilder (76.7ms)
+Completed 200 OK in 92ms (Views: 85.5ms | ActiveRecord: 2.0ms)
+
+
