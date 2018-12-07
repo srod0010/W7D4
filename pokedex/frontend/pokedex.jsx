@@ -4,6 +4,7 @@ import { fetchAllPokemon } from "./util/api_util";
 import { receiveAllPokemon, requestAllPokemon } from "./actions/pokemon_actions";
 import { configureStore } from './store/store';
 import Root from './root';
+import selectAllPokemon from './reducers/selectors'
 
 document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
@@ -18,3 +19,4 @@ document.addEventListener('DOMContentLoaded', () => {
 window.requestAllPokemon = requestAllPokemon;
 window.receiveAllPokemon = receiveAllPokemon;
 window.fetchAllPokemon = fetchAllPokemon;
+window.selectAllPokemon = selectAllPokemon;
